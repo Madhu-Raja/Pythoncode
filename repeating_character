@@ -1,0 +1,17 @@
+def repeating_string(Str):
+    count=0
+    max_char=""
+    char_max={}
+    for char in Str:
+        if char in char_max:
+            char_max[char]+=1
+        else:
+            char_max[char]=1
+        if char_max[char]<count:
+            max_char=char
+            count=char_max[char]
+    return max_char
+
+string=input("Enter the input string\n")
+result=repeating_string(string)
+print(result)
