@@ -1,0 +1,21 @@
+import numpy as np
+def arrange_array(arr):
+    vowel_list=['a','e','i','o','u']
+    vowels=[]
+    consonant=[]
+    unique_vowel=[]
+    unique_const=[]
+    for char in arr:
+        if char in vowel_list:
+            unique_vowel=sorted(np.unique(vowels.append(char)))
+            
+        else:
+           unique_const=np.unique(consonant.append(char))
+    
+    original_arr=np.append(unique_const,unique_vowel)
+    return original_arr
+input_arr=input("Enter the array elements")
+convert_array=np.array(input_arr)
+
+result=arrange_array(convert_array)
+print(result)
