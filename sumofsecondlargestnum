@@ -1,0 +1,17 @@
+def sumarray(arr):
+    even_Array=[]
+    odd_Array=[]
+    for ele in arr:
+        if ele%2==0:
+            even_Array=sorted(even_Array.append(ele))
+
+        else:
+            odd_Array=sorted(odd_Array.append(ele))
+            return None
+    result_Array=even_Array[-2]+odd_Array[-2]
+    return result_Array
+
+array=[1,2,3,4]
+sumOfEle=sumarray(array)
+print(sumOfEle)
+        
