@@ -1,0 +1,16 @@
+  def commonPrefix(strs):
+        if not strs:
+            return ""
+    min_length=min(len(s) for s in strs)
+    end=0
+    while end < min_length:
+        for i in range(1,len(strs)):
+            if strs[i][end]!= strs[0][end]:
+                return strs[0][:end]
+            end +=1
+        return strs[0][:end]
+
+strs=["hi","hello"]
+result=commonPrefix(strs)
+print(result)
+        
